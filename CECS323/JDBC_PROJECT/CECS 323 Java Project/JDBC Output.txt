@@ -1,0 +1,299 @@
+run:
+Name of the database (not the user account): JDBC
+Connecting to database...
+Please enter a number for how you want to choose from the menu: 
+1) List all writing groups 
+2) List all the data for a group specified by the user
+3) List all publishers 
+4) List all the data for a publisher specified by the user
+5) List all book titles 
+6) List all the data for a book specified by the user 
+7) Insert a new book
+8) Insert a new publisher and update all books published by one publisher to be published by the new publisher
+9) Remove a book specified by the user 
+10)Exit Menu
+1
+
+Creating statement...
+Group Name               Head Writer                             Year Formed         Subject                            
+Sci-Fi For Kids          Drew Brees                              2001                Science Fiction                    
+Scary Mondays            Tom Hanks                               1999                Horror                             
+Thrill Seekers           Julia Roberts                           1972                Adventure                          
+The Killers              Michael Meyers                          1969                Horror                             
+The Theatrics            William Shakespeare                     2002                Drama                              
+Teen Readers             Katniss Everdeen                        2001                Young Adult                        
+
+Please enter a number for how you want to choose from the menu: 
+1) List all writing groups 
+2) List all the data for a group specified by the user
+3) List all publishers 
+4) List all the data for a publisher specified by the user
+5) List all book titles 
+6) List all the data for a book specified by the user 
+7) Insert a new book
+8) Insert a new publisher and update all books published by one publisher to be published by the new publisher
+9) Remove a book specified by the user 
+10)Exit Menu
+2
+
+Creating statement...
+Please enter a number for how you want to choose from the writing groups: 
+1) Group Name 
+2) Head Writer 
+3) Year Formed 
+4) Subject
+4
+
+Please enter a subject: 
+Horror
+Group Name               Head Writer                             Year Formed         Subject                            
+Scary Mondays            Tom Hanks                               1999                Horror                             
+The Killers              Michael Meyers                          1969                Horror                             
+
+Please enter a number for how you want to choose from the menu: 
+1) List all writing groups 
+2) List all the data for a group specified by the user
+3) List all publishers 
+4) List all the data for a publisher specified by the user
+5) List all book titles 
+6) List all the data for a book specified by the user 
+7) Insert a new book
+8) Insert a new publisher and update all books published by one publisher to be published by the new publisher
+9) Remove a book specified by the user 
+10)Exit Menu
+3
+
+Creating statement...
+Publisher Name           Year Publisher Address                  Publisher Phone     Publisher Email                    
+GrayWolf Press           11152 Wallingsford Rd                   3237864365          info@GrayWolfPress.com             
+Penguin Books            64195 Oliver Dr.                        9096512231          APSupport@PenguinBooksAssociation.com
+Random House             922 Newport Dr.                         5623497589          custserv@RandomH.com               
+W.W. Norton & Company    500 Fifth Avenue                        2154351905          mleary@wwnorton.com                
+Bloomsburg Publishing    195 Broadway                            2122077000          contact@Bloomsbury.com             
+Allen & Unwin            Osmond House 26-27 Boswell Street       61284250100         weborders@allenandunwin.com        
+
+Please enter a number for how you want to choose from the menu: 
+1) List all writing groups 
+2) List all the data for a group specified by the user
+3) List all publishers 
+4) List all the data for a publisher specified by the user
+5) List all book titles 
+6) List all the data for a book specified by the user 
+7) Insert a new book
+8) Insert a new publisher and update all books published by one publisher to be published by the new publisher
+9) Remove a book specified by the user 
+10)Exit Menu
+4
+
+Creating statement...
+Please enter a number for how you want to choose from the publishers: 
+1) Publisher Name 
+2) Publisher Address 
+3) Publisher Phone 
+4) Publisher Email
+1
+
+Please enter a publisher name: 
+Penguin Books
+Publisher Name           Publisher Address                       Publisher Phone     Publisher Email                    
+Penguin Books            64195 Oliver Dr.                        9096512231          APSupport@PenguinBooksAssociation.com
+
+Please enter a number for how you want to choose from the menu: 
+1) List all writing groups 
+2) List all the data for a group specified by the user
+3) List all publishers 
+4) List all the data for a publisher specified by the user
+5) List all book titles 
+6) List all the data for a book specified by the user 
+7) Insert a new book
+8) Insert a new publisher and update all books published by one publisher to be published by the new publisher
+9) Remove a book specified by the user 
+10)Exit Menu
+5
+
+Creating statement...
+Group Name               Publisher Name                          Book Title                              Year Published                     Number of Pages          
+Sci-Fi For Kids          GrayWolf Press                          Utopia                                  1516                               359                      
+Scary Mondays            Penguin Books                           Friday The 13th                         1632                               459                      
+Thrill Seekers           Random House                            Exploring The Grand Canyon              1937                               123                      
+The Killers              W.W. Norton & Company                   Halloween                               1874                               589                      
+The Theatrics            Bloomsburg Publishing                   Romeo And Juliet                        1627                               378                      
+Teen Readers             Allen & Unwin                           The Hunger Games                        2000                               374                      
+
+Please enter a number for how you want to choose from the menu: 
+1) List all writing groups 
+2) List all the data for a group specified by the user
+3) List all publishers 
+4) List all the data for a publisher specified by the user
+5) List all book titles 
+6) List all the data for a book specified by the user 
+7) Insert a new book
+8) Insert a new publisher and update all books published by one publisher to be published by the new publisher
+9) Remove a book specified by the user 
+10)Exit Menu
+6
+
+Creating statement...
+Please enter a number for how you want to choose from the books: 
+1) Group Name 
+2) Publisher Name 
+3) Book Title 
+4) Year Published 
+5) Number of Pages
+3
+
+Please enter a book title: 
+Utopia
+Group Name               Publisher Name                          Book Title                              Year Published                     Number of Pages          
+Sci-Fi For Kids          GrayWolf Press                          Utopia                                  1516                               359                      
+
+Please enter a number for how you want to choose from the menu: 
+1) List all writing groups 
+2) List all the data for a group specified by the user
+3) List all publishers 
+4) List all the data for a publisher specified by the user
+5) List all book titles 
+6) List all the data for a book specified by the user 
+7) Insert a new book
+8) Insert a new publisher and update all books published by one publisher to be published by the new publisher
+9) Remove a book specified by the user 
+10)Exit Menu
+7
+
+Enter group name of the book to add (limit 30 characters)
+The Killers
+Enter publisher name of the book (limit 50 characters)
+Penguin Books
+Enter book title of the book to add (limit 30 characters)
+Adrenaline Rush
+Enter the published year of the book (integer ex: 2000.. XXXX)
+2019
+Enter the number of pages of the book (integer)
+292
+Creating statement... 
+
+Please enter a number for how you want to choose from the menu: 
+1) List all writing groups 
+2) List all the data for a group specified by the user
+3) List all publishers 
+4) List all the data for a publisher specified by the user
+5) List all book titles 
+6) List all the data for a book specified by the user 
+7) Insert a new book
+8) Insert a new publisher and update all books published by one publisher to be published by the new publisher
+9) Remove a book specified by the user 
+10)Exit Menu
+5
+
+Creating statement...
+Group Name               Publisher Name                          Book Title                              Year Published                     Number of Pages          
+Sci-Fi For Kids          GrayWolf Press                          Utopia                                  1516                               359                      
+Scary Mondays            Penguin Books                           Friday The 13th                         1632                               459                      
+Thrill Seekers           Random House                            Exploring The Grand Canyon              1937                               123                      
+The Killers              W.W. Norton & Company                   Halloween                               1874                               589                      
+The Theatrics            Bloomsburg Publishing                   Romeo And Juliet                        1627                               378                      
+Teen Readers             Allen & Unwin                           The Hunger Games                        2000                               374                      
+The Killers              Penguin Books                           Adrenaline Rush                         2019                               292                      
+
+Please enter a number for how you want to choose from the menu: 
+1) List all writing groups 
+2) List all the data for a group specified by the user
+3) List all publishers 
+4) List all the data for a publisher specified by the user
+5) List all book titles 
+6) List all the data for a book specified by the user 
+7) Insert a new book
+8) Insert a new publisher and update all books published by one publisher to be published by the new publisher
+9) Remove a book specified by the user 
+10)Exit Menu
+8
+
+Enter the name of the publisher to add (limit 30 characters)
+Jackson Collins
+Enter the address of the publisher to add (limit 50 characters)
+562 Broadway Avenue
+Enter the phone number of the publisher to add (limit 30 characters)
+8004247373
+Enter the email address of the publisher to add (limit 30 characters)
+digitalfox@gmail.com
+Creating statement... 
+What is the name of the Publisher that Jackson Collins will replace? Penguin Books
+
+Please enter a number for how you want to choose from the menu: 
+1) List all writing groups 
+2) List all the data for a group specified by the user
+3) List all publishers 
+4) List all the data for a publisher specified by the user
+5) List all book titles 
+6) List all the data for a book specified by the user 
+7) Insert a new book
+8) Insert a new publisher and update all books published by one publisher to be published by the new publisher
+9) Remove a book specified by the user 
+10)Exit Menu
+5
+
+Creating statement...
+Group Name               Publisher Name                          Book Title                              Year Published                     Number of Pages          
+Sci-Fi For Kids          GrayWolf Press                          Utopia                                  1516                               359                      
+Scary Mondays            Jackson Collins                         Friday The 13th                         1632                               459                      
+Thrill Seekers           Random House                            Exploring The Grand Canyon              1937                               123                      
+The Killers              W.W. Norton & Company                   Halloween                               1874                               589                      
+The Theatrics            Bloomsburg Publishing                   Romeo And Juliet                        1627                               378                      
+Teen Readers             Allen & Unwin                           The Hunger Games                        2000                               374                      
+The Killers              Jackson Collins                         Adrenaline Rush                         2019                               292                      
+
+Please enter a number for how you want to choose from the menu: 
+1) List all writing groups 
+2) List all the data for a group specified by the user
+3) List all publishers 
+4) List all the data for a publisher specified by the user
+5) List all book titles 
+6) List all the data for a book specified by the user 
+7) Insert a new book
+8) Insert a new publisher and update all books published by one publisher to be published by the new publisher
+9) Remove a book specified by the user 
+10)Exit Menu
+9
+
+Select a book to delete by providing its' title: 
+Utopia
+Provide the name of that book's corresponding writing group: 
+Sci-Fi For Kids
+Book successfully removed!
+
+Please enter a number for how you want to choose from the menu: 
+1) List all writing groups 
+2) List all the data for a group specified by the user
+3) List all publishers 
+4) List all the data for a publisher specified by the user
+5) List all book titles 
+6) List all the data for a book specified by the user 
+7) Insert a new book
+8) Insert a new publisher and update all books published by one publisher to be published by the new publisher
+9) Remove a book specified by the user 
+10)Exit Menu
+5
+
+Creating statement...
+Group Name               Publisher Name                          Book Title                              Year Published                     Number of Pages          
+Scary Mondays            Jackson Collins                         Friday The 13th                         1632                               459                      
+Thrill Seekers           Random House                            Exploring The Grand Canyon              1937                               123                      
+The Killers              W.W. Norton & Company                   Halloween                               1874                               589                      
+The Theatrics            Bloomsburg Publishing                   Romeo And Juliet                        1627                               378                      
+Teen Readers             Allen & Unwin                           The Hunger Games                        2000                               374                      
+The Killers              Jackson Collins                         Adrenaline Rush                         2019                               292                      
+
+Please enter a number for how you want to choose from the menu: 
+1) List all writing groups 
+2) List all the data for a group specified by the user
+3) List all publishers 
+4) List all the data for a publisher specified by the user
+5) List all book titles 
+6) List all the data for a book specified by the user 
+7) Insert a new book
+8) Insert a new publisher and update all books published by one publisher to be published by the new publisher
+9) Remove a book specified by the user 
+10)Exit Menu
+10
+Goodbye!
+BUILD SUCCESSFUL (total time: 1 minute 56 seconds)

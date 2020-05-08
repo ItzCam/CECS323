@@ -1,0 +1,57 @@
+-- Table for Writing Groups containing various information about the groups
+CREATE TABLE WritingGroups (
+    GroupName VARCHAR (30) NOT NULL,  -- The name of the group 
+    HeadWriter VARCHAR (30) NOT NULL, -- The name of the head writer of the book
+    YearFormed int,                   -- The year the writing group was formed 
+    Subject VARCHAR (30),             -- The type of books being written
+    constraint WritingGroups_pk primary key (GroupName)
+);
+
+-- Table for Publsihers containing information about the publishers
+CREATE TABLE Publishers(
+    PublisherName VARCHAR(50) NOT NULL, -- The name of the publisher for the book
+    PublisherAddress VARCHAR(50),  -- The publishers address
+    PublisherPhone VARCHAR(50),    -- The publishers phone number
+    PublisherEmail VARCHAR(50),    -- The publishers email address
+    constraint Publishers_pk primary key (PublisherName)
+);
+
+-- Table for Books containing various information about the books
+CREATE TABLE Books(
+    GroupName VARCHAR(30) NOT NULL, -- The name of the group
+    PublisherName VARCHAR(50) NOT NULL, -- The name of the publisher for the book
+    BookTitle VARCHAR(30) NOT NULL, -- The title of the book
+    YearPublished int, -- The year the book was published
+    NumberPages int, -- The number of pages the book contains
+    constraint Books_WritingGroups_01 foreign key (GroupName) references WritingGroups (GroupName),
+    constraint Books_Publishers_01 foreign key (PublisherName) references Publishers (PublisherName),
+    constraint Books_pk primary key (GroupName, BookTitle),
+    constraint Books_uk_01 unique (BookTitle, PublisherName)
+);
+
+-- Data for Writing Groups
+INSERT into WritingGroups(GroupName, HeadWriter, YearFormed, Subject)
+    values ('Sci-Fi For Kids', 'Drew Brees', 2001, 'Science Fiction'),
+           ('Scary Mondays', 'Tom Hanks', 1999, 'Horror'),
+           ('Thrill Seekers', 'Julia Roberts', 1972, 'Adventure'),
+           ('The Killers', 'Michael Meyers', 1969, 'Horror'),
+           ('The Theatrics', 'William Shakespeare', 2002, 'Drama'),
+           ('Teen Readers', 'Katniss Everdeen', 2001, 'Young Adult');
+
+-- Data for publishers
+INSERT into Publishers(PublisherName, PublisherAddress, PublisherPhone, PublisherEmail) 
+    values ('GrayWolf Press', '11152 Wallingsford Rd', '3237864365', 'info@GrayWolfPress.com'),
+           ('Penguin Books', '64195 Oliver Dr.' , '9096512231', 'APSupport@PenguinBooksAssociation.com'),
+           ('Random House', '922 Newport Dr.' , '5623497589' , 'custserv@RandomH.com'),
+           ('W.W. Norton & Company', '500 Fifth Avenue', '2154351905', 'mleary@wwnorton.com'),
+           ('Bloomsburg Publishing' , '195 Broadway' , '2122077000', 'contact@Bloomsbury.com'),
+           ('Allen & Unwin', 'Osmond House 26-27 Boswell Street', '4402072691610', 'weborders@allenandunwin.com');
+
+-- Data for Books
+INSERT into Books(GroupName, PublisherName, BookTitle, YearPublished, NumberPages)
+    values ('Sci-Fi For Kids', 'GrayWolf Press', 'Utopia', 1516, 359),
+           ('Scary Mondays', 'Penguin Books', 'Friday The 13th', 1632, 459),
+           ('Thrill Seekers', 'Random House', 'Exploring The Grand Canyon', 1937, 123),
+           ('The Killers', 'W.W. Norton & Company', 'Halloween', 1874, 589),
+           ('The Theatrics', 'Bloomsburg Publishing', 'Romeo And Juliet', 1627, 378),
+           ('Teen Readers', 'Allen & Unwin', 'The Hunger Games', 2000, 374);
